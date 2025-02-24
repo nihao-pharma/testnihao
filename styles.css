@@ -1,0 +1,95 @@
+/* General page styling */
+/* General page styling */
+body {
+    font-family: sans-serif, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    background: url("../static/images/Hospital_Playlist_poster.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat title */
+h1 {
+    font-size: 26px; /* Reduced title size */
+    text-align: center;
+}
+
+/* Chat container */
+.container {
+    background-color: white;
+    margin-left: 50px;
+    width: 40%;
+    width: 350px; /* Reduced width */
+    height: 450px; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Slightly reduced padding */
+    overflow: hidden;
+}
+
+/* Chat messages */
+.chatbox {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Message styling */
+.message {
+    max-width: 75%;
+    padding: 8px; /* Slightly reduced padding */
+    margin: 4px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+/* User messages (right-aligned, blue) */
+.user-message {
+    background-color: #9abddc;
+    color: black;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Chatbot messages (left-aligned, gray) */
+.bot-message {
+    background-color: #e5f3fd;
+    color: black;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Input and button */
+.input-area {
+    display: flex;
+    gap: 8px; /* Adjusted spacing */
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2c528c;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4d89c9;
+}
